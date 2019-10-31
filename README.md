@@ -73,7 +73,8 @@ systemctl enable dnsmasq
 #### Other password
 
 You can generate new password by doing command:
-```# openssl passwd -1 password123
+```
+# openssl passwd -1 password123
 $1$e4wrrGGX$tZPQKPsXjhNmbiGg53M441
 #
 ```
