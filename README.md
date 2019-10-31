@@ -9,10 +9,15 @@ This is a simple setup of PXE Server from Rasperry PI connected in local network
 * DHCP server router on IP: 192.168.1.254
 * Rasperry PI with at least 8Gb SD card on IP: 192.168.1.1
 * Raspberry info
-* virtualbox,vmware for testing
-* default password is passwored123
-* this will overwrite your current vsftpd configuration
-* this will overwrite your current dnsmasq configuration
+```# uname -a
+Linux raspberrypi 4.19.75-v7+ #1270 SMP Tue Sep 24 18:45:11 BST 2019 armv7l GNU/Linux
+```
+* VirtualBox, VMware, Hyper-V for testing boot
+* Default password is passwored123
+
+__Note:__
+* __This will overwrite your current vsftpd configuration__
+* __This will overwrite your current dnsmasq configuration__
 
 ## Architecture
 (img)
