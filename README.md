@@ -1,5 +1,7 @@
-# Raspberry PI: PXE boot, CentOS 8 install
-<p align="center"><img src="images/pxeboot_menu.png" alt="pxeboot"></p>
+# Raspberry PI: PXE boot, CentOS 8 install with kickstart
+
+<p align="center"><img src="images/pxeboot_menu.png" alt="pxeboot"/></p>
+
 ## Description
 
 This is a simple setup of PXE Server from Rasperry PI connected in local network that will make netboot and install Centos 8.
@@ -75,7 +77,7 @@ systemctl enable dnsmasq
 ```
 
 ### Notes
-#### Other password
+#### Change default password
 
 You can generate new password by doing command:
 ```
