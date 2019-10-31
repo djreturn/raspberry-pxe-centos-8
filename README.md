@@ -82,9 +82,9 @@ then change it in kickstart file `/srv/isos/centos8.ks`
 
 
 ## References
-http://isoredirect.centos.org/centos/8/isos/x86_64/CentOS-8-x86_64-1905-dvd1.iso
-https://bashtheshell.com/guide/setting-up-pxe-boot-server-on-raspberry-pi/
-https://www.linuxtechi.com/configure-pxe-installation-server-centos-7/
-https://cspracs.wordpress.com/pxe-boot/
-https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/installation_guide/s1-kickstart2-options
+- http://isoredirect.centos.org/centos/8/isos/x86_64/CentOS-8-x86_64-1905-dvd1.iso
+- https://bashtheshell.com/guide/setting-up-pxe-boot-server-on-raspberry-pi/
+- https://www.linuxtechi.com/configure-pxe-installation-server-centos-7/
+- https://cspracs.wordpress.com/pxe-boot/
+- https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/installation_guide/s1-kickstart2-options
 
