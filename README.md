@@ -1,4 +1,4 @@
-# Raspberry PXE setup for Centos-8
+# Raspberry PI: PXE boot, CentOS 8 install
 
 ## Description
 
@@ -12,7 +12,7 @@ This is a simple setup of PXE Server from Rasperry PI connected in local network
 ```# uname -a
 Linux raspberrypi 4.19.75-v7+ #1270 SMP Tue Sep 24 18:45:11 BST 2019 armv7l GNU/Linux
 ```
-* VirtualBox, VMware, Hyper-V for testing boot
+* VirtualBox, VMware, Hyper-V for testing boot (2GB Ram required)
 * Default password is passwored123
 
 __Note:__
