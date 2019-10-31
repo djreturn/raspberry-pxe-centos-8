@@ -1,0 +1,16 @@
+default menu.c32
+
+prompt 0
+timeout 30
+
+MENU TITLE PXE Menu
+
+LABEL centos8_x64
+    MENU LABEL CentOS 8_X64
+    kernel vmlinuz
+    append initrd=initrd.img ks=ftp://192.168.1.1/centos8.ks inst.repo=ftp://192.168.1.1/centos
+
+LABEL local
+    MENU DEFAULT
+    MENU LABEL Boot from Local Hard Disk
+    LOCALBOOT 0
