@@ -1,5 +1,5 @@
 # Raspberry PI: PXE boot, CentOS 8 install
-
+<p align="center"><img src="images/pxeboot_menu.png" alt="pxeboot"></p>
 ## Description
 
 This is a simple setup of PXE Server from Rasperry PI connected in local network that will make netboot and install Centos 8.
