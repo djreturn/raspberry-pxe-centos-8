@@ -22,7 +22,9 @@ __Note:__
 * __This will overwrite your current dnsmasq configuration__
 
 ## Architecture
-(img)
+
+<p align="center"><img src="images/HomeLab.png" alt="pxeboot"/></p>
+
 ## Installation 
 Tere are three ways installing it.
 
