@@ -6,14 +6,13 @@ This is a simple setup of PXE Server from Rasperry PI connected in local network
 
 ## Requirments and info
 
-*DHCP server router on IP: 192.168.1.254
-*Rasperry PI with at least 8Gb SD card on IP: 192.168.1.1
-*Raspberry info
-*virtualbox,vmware for testing
-*default password is passwored123
-*this will overwrite your current vsftpd configuration
-*this will overwrite your current dnsmasq configuration
-
+* DHCP server router on IP: 192.168.1.254
+* Rasperry PI with at least 8Gb SD card on IP: 192.168.1.1
+* Raspberry info
+* virtualbox,vmware for testing
+* default password is passwored123
+* this will overwrite your current vsftpd configuration
+* this will overwrite your current dnsmasq configuration
 
 ## Architecture
 (img)
@@ -26,45 +25,58 @@ Tere are three ways installing it.
 
 ### Manual Installastion
 1. Install packages:
-``apt install vsftpd dnsmasq wget rpm2cipo git``
+```
+apt install vsftpd dnsmasq wget rpm2cipo git
+```
 
 2. Download CentOS 8 DVD ISO:
-``wget http://mozart.ee.ic.ac.uk/CentOS/8.0.1905/isos/x86_64/CentOS-8-x86_64-1905-dvd1.iso``
+```
+wget http://mozart.ee.ic.ac.uk/CentOS/8.0.1905/isos/x86_64/CentOS-8-x86_64-1905-dvd1.iso
+```
 
 3. Download this repository:
-``git clone https://github.com/spagu/raspberry-pxe-centos-8.git``
+```
+git clone https://github.com/spagu/raspberry-pxe-centos-8.git
+```
 
 4. Set up folders
-``mkdir -p /srv/isos/centos
+```
+mkdir -p /srv/isos/centos
 mkdir -p /srv/ftpd
-chown nobody:nogroup /srv/``
+chown nobody:nogroup /srv/
+```
 
 5. Mount DVD into a folder
-``mount -o loop CentOS-8-x86_64-1905-dvd1.iso /srv/isos/centos``
+```
+mount -o loop CentOS-8-x86_64-1905-dvd1.iso /srv/isos/centos
+```
 
 6. Get boot files
-``mkdir -p /tmp/bootfiles
+```mkdir -p /tmp/bootfiles
 cp /srv/isos/centos/BaseOS/Packages/syslinux-* /tmp/bootfiles
 cd /tmp/bootfiles
 rpm2cpio syslinux-6.04-1.el8.noarch.rpm | cpio -idmv
 rpm2cpio syslinux-tftpboot-6.04-1.el8.noarch.rpm | cpio -idmv
-``
+```
 7. Copy relevant files into locations
 
 
 8. Start services
-``systemctl start vsftpd
+```
+systemctl start vsftpd
 systemctl enable vsftpd
 systemctl start dnsmasq
-systemctl enable dnsmasq``
+systemctl enable dnsmasq
+```
 
 ### Notes
 #### Other password
 
 You can generate new password by doing command:
-``# openssl passwd -1 password123
+```# openssl passwd -1 password123
 $1$e4wrrGGX$tZPQKPsXjhNmbiGg53M441
-#``
+#
+```
 then change it in kickstart file `/srv/isos/centos8.ks`
 
 
